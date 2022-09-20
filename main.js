@@ -74,6 +74,7 @@ function drawContacts() {
 
 }
 
+
 /**
  * This function is called with a contact id
  * and will use the id to find and remove the 
