@@ -57,11 +57,12 @@ function loadContacts() {
 function drawContacts() {
   let contactListElement = document.getElementById("contact-list")
   let contactTemplate = ""
+  
   contacts.forEach(contact => {
     contactTemplate += `
     <div class="card mt-1 mb-1">
-    <div class="card mt-1 mb-1 " ${contact.emergencyContact ? 'emergency-contact' : ''} ">
-      <h3 class="mt-1 mb-1">${contact.name}</h3>
+    <div class="card mt-1 mb-1 emergency-contact " ${contact.emergencyContact ? 'emergency-contact' : ''} ">
+      <div class="mt-1 mb-1">${contact.name}</div>
       <p>${contact.number}</p>
       <button type="button" onclick="removeContact('${contact.id}')">remove</button>
     </div>
