@@ -60,9 +60,9 @@ function drawContacts() {
   
   contacts.forEach(contact => {
     contactTemplate += `
-    <div class="card mt-1 mb-1">
-    <div class="card mt-1 mb-1 emergency-contact " ${contact.emergencyContact ? 'emergency-contact' : ''} ">
-      <div class="mt-1 mb-1">${contact.name}</div>
+    <div class=" mt-1 mb-1">
+    <div class=" card mt-2 mb-2 " ${contact.emergencyContact ? 'emergencyContact' : ''} ">
+      <h3 class="mt-1 mb-1">${contact.name}</h3>
       <p>${contact.number}</p>
       <button type="button" onclick="removeContact('${contact.id}')">remove</button>
     </div>
